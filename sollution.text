@@ -1914,7 +1914,34 @@ itemlist.addEventListener("click",(e)=>{
 
 8. Advanced Error Handling (10 Questions)
 	71.	Write a program to handle a division by zero error.
+    let a = 3;
+
+let b = 0
+
+try{
+let division =a/b;
+if(b==0){
+    throw new Error("divison by zero is not allowed ")
+}
+console.log(division)
+}catch(err){
+console.log("error",err.message)
+}
+
+
+
 	72.	Use try...catch to log an error message for invalid JSON parsing.
+    const jsonString = '{"name": "Alice", "age": 25,}';
+
+try{
+    let parsedata = JSON.parse(jsonString)
+    console.log(parsedata)
+}catch(err){
+   
+    console.log(err.message)
+}
+
+
 	73.	Write a function to validate user input and throw a custom error if invalid.
 	74.	Create a program to handle a failed promise using .catch().
 	75.	Use finally to log a cleanup message after a promise resolves or rejects.
