@@ -1,0 +1,1951 @@
+1.⁠ ⁠Basic Console Usage
+	1.	Write a program that calculates the sum of 5 + 10, assigns it to a variable, and logs the result to the console.
+    
+   answer number 1=>  console.log(5+10)
+
+2.⁠ ⁠Variables and Data Types
+	2.	Declare a variable age with the value 25. Then, reassign it to 30 and log its type using typeof.
+
+    answer number 2=> 
+    let a = 25
+    let b = 30;
+    let sum = a+b;
+    console.log(sum)
+
+3.⁠ ⁠Loops
+	3.	Write a for loop that prints all the odd numbers between 1 and 20.
+
+ let val = 20;
+   for(let i=0; i<=20; i++){
+    if(i%2 !=0){
+        console.log(i)
+    }
+   }
+
+	4.	Create a while loop that starts at 10 and decreases by 2 until it reaches 0. Log each step.
+
+    let i = 10;
+
+while(i>=0){
+console.log(i)
+i=i-2
+}
+
+4.⁠ ⁠Arrays
+	5.	Create an array of your favorite fruits (at least 5).
+	•	Add a new fruit to the end of the array.
+	•	Remove the first fruit from the array.
+	•	Log the updated array.
+
+    let fruit =['mango',"apple","orange","banana2",'banana']
+
+fruit.push("apple2")
+console.log(fruit)
+
+fruit.shift()
+console.log(fruit)
+
+
+	6.	Write a program that iterates over an array of numbers and prints only the numbers greater than 10.
+
+    let numbers = [24,23,34,4,5,45,4634,2,34435,5456,343,]
+
+
+for (const number of numbers) {
+    if(number>10){
+        console.log(number)
+    }
+}
+
+
+5.⁠ ⁠Functions
+	7.	Write a function multiplyNumbers that takes two numbers as arguments and returns their product. Test the function with values 5 and 6.
+
+    let multiply = function multiplyNumbers(num1,num2){
+    return num1*num2
+}
+
+console.log(multiply(5,6))
+
+6.⁠ ⁠Conditionals
+	8.	Write an if...else statement to check if a number is divisible by 3. If it is, log “Divisible by 3,” otherwise log “Not divisible by 3.”
+
+    let num = 21;
+
+if(num%3==0){
+    console.log("divisible by three")
+}else{
+    console.log("not divisble by three")
+}
+
+7.⁠ ⁠Object Basics
+	9.	Create an object book with properties: title, author, and year. Add a new property genre with the value fiction and log the updated object.
+
+    let book ={
+   title:"the vikas universe",
+    author:"vikas",
+    year:2025,
+
+
+    
+}
+
+book.genre=function (){
+    console.log("this is genre added ")
+}
+
+console.log(book)
+
+8.⁠ ⁠String Manipulation
+	10.	Write a program that takes a string JavaScript is fun! and:
+	•	Converts it to all uppercase.
+	•	Extracts the first 10 characters.
+	•	Replaces the word fun with awesome.
+
+    let str = "javascript is a fun "
+console.log(str.toUpperCase(),str.slice(0,10),str.replace("fun","awesome"))
+
+Here is a collection of 100 JavaScript questions, divided into groups of 10, based on topics 1-8, with increasing complexity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Basic Console Usage (10 Questions)
+	1.	Log your name and favorite hobby to the console.
+    console.log("viaks")
+	2.	Perform and log the result of 45 * 2 - 10.
+    console.log(45*2-10)
+
+
+
+	3.	Use console.log() to display the current year.
+    let date = new Date()
+date.getFullYear;
+ let string = String(date)
+console.log(typeof string ,string.slice(0,15))
+
+
+
+	4.	Create two variables for first and last name. Concatenate and log them.
+
+let firstname = "vikas "
+let lastname = "verma"
+console.log(firstname.concat(lastname))
+
+
+	5.	Track the value of a variable by logging it before and after updating.
+
+let val = 23;
+console.log(val)
+val=23;
+console.log(val)
+
+
+
+	6.	Use console.error() to simulate an error message.
+function errormasage(a,b){
+    if(b===0){
+        console.log("in the space of b 0 is not allowed")
+    }
+    console.log(a)
+}
+
+
+errormasage(3,0)
+
+
+	7.	Log the square of the number 12 to the console.
+    console.log(12*12)
+
+
+
+	8.	Print the type of a variable holding the value true.
+    let boolean = true
+    console.log(typeof boolean)
+
+
+	9.	Create a variable holding your age and log whether it’s greater than 18.
+    let age = 19
+    if(age>18){
+        console.log(age)
+    }
+	10.	Log the result of 100 / 0 and observe the output.
+console.log(100/0) infinite
+
+
+2. Variables and Data Types (10 Questions)
+
+	11.	Declare a variable using let and log its value.
+    let val = 32
+    console.log
+
+
+	12.	Create a constant to store the value of PI and log it.
+const valueOfPi = 3.14;
+console.log(valueOfPi)
+
+
+	13.	Reassign a value to a variable declared with let and log 
+    the result.
+let val = 4
+val=7;
+console.log(val)
+
+
+
+	14.	Check the type of null and log it.
+console.log(typeof null) object
+
+	15.	Create a variable with a number as a string (e.g., "25") and log its type.
+let num = "34"
+console.log(typeof num)
+
+
+	16.	Use typeof to check the type of a boolean variable.
+    console.log(typeof Boolean)
+	17.	Create three variables of types string, number, and boolean, and log their values.
+let num = 3;
+let str = "3"
+let boolean =true
+console.log(num , str , boolean)
+
+
+	18.	Declare a variable without assigning a value. Log its type.
+    let val;
+    typeof(val) undefined
+
+	19.	Create a variable with undefined and log its type.
+let val = undefined;
+typeof undefined is undefined
+
+	20.	Use const to create an array. Try reassigning the array and observe the error.
+    const arr = 343;
+// arr=23;
+// console.log(arr)
+
+assignment to constant variable 
+
+3. Loops (10 Questions)
+	21.	Write a for loop to print numbers from 1 to 50.
+for(let i =0; i<=50;i++){
+    console.log(i)
+}
+
+
+	22.	Use a while loop to sum the numbers from 1 to 10.
+let num =10;
+let sum =0;
+while(num>0){
+    sum=sum+num;
+    num=num-1;
+}
+console.log(sum)
+
+	23.	Create a for...of loop to log each character of the string "JavaScript".
+let str = "Javascript"
+for (const char of str) {
+    console.log(char)
+    
+}
+
+	24.	Write a for loop that skips even numbers between 1 and 20.
+    let num =20 ;
+for(let i=0;i<=num ; i++){
+    if(i%2 !==0){
+console.log(i)
+    }
+}
+
+
+	25.	Use a do...while loop to log numbers from 5 to 1.
+let num = 5;
+
+do {
+    console.log(num)
+    num = num-1
+    
+    
+} while (num>0);
+
+
+    
+	26.	Create a for loop that calculates the factorial of 5.
+    let fact =1
+// for (let i = 1;i<=5;i++){
+//     fact = fact*i;
+    
+    
+// }
+
+// console.log(fact)
+
+
+
+
+	27.	Write a nested loop to print a 3x3 grid of numbers.
+for(let row = 1;row<4;row++){
+   let out =''
+    for(let col=1;col<4;col++){
+      
+  out=out+col
+       
+    }
+   console.log(out)
+}
+
+
+
+	28.	Use a for loop to reverse an array [1, 2, 3, 4].
+    let arr = [1,2,3,4]
+
+for(let i=arr.length-1;i>=0;i--){
+    console.log(arr[i])
+}
+
+
+	29.	Write a while loop that logs numbers from 1 to 100 divisible by 5.
+
+    let num = 1
+
+while(num<101){
+  if(num%5==0){
+    console.log(num)
+  }
+
+    num = num+1;
+}
+
+
+
+	30.	Use a for...in loop to iterate over an object and log its keys.
+    const obj ={
+    name :"vikas ",
+    surname :"verma ",
+    age :"22",
+    weight :"62",
+}
+
+for (const key in obj) {
+   console.log(key,":",obj[key])
+}
+
+
+
+
+4. Arrays (10 Questions)
+	31.	Create an array of your top 5 favorite movies and log it.
+    const movie = ["marco","dfjofij","efji","efiuefi","eiujfjeij"]
+    for(let i=0; i<movie.length;i++){
+        console.log(movie[i])
+    }
+
+
+
+	32.	Find and log the second element of an array.
+    let arr= [3,4,34,34,4]
+    console.log(arr[1])
+
+
+	33.	Add two new elements to the start of an array using .
+    unshift().
+    let arr= [3,4,34,34,4]
+    arr.unshift(3,5)
+    console.log(arr)
+    
+	34.	Remove the last element of an array and log the updated array.
+     let arr= [3,4,34,34,4]
+    arr.pop()
+    console.log(arr)
+
+
+	35.	Use .slice() to extract the first three elements of an array.
+    let arr= [3,4,34,34,4]
+ let newb=arr.slice(0,3)
+
+console.log(newb)
+
+
+
+	36.	Find the index of a specific element in an array using .indexOf().
+let arr= [3,4,34,34,4]
+console.log(arr.indexOf(34))
+
+
+	37.	Check if a value exists in an array using .includes().
+      let arr= [3,4,34,34,4]
+console.log(arr.includes(4))
+
+
+	38.	Combine two arrays [1, 2] and [3, 4] using .concat().
+let arr = [1,2]
+let ar = [1,2]
+console.log(arr.concat(ar))
+
+
+
+	39.	Sort an array of numbers [5, 2, 9, 1] in ascending order.
+
+
+
+	40.	Write a program that creates a copy of an array without mutating the original.
+
+
+	let arr = [3,45,34,3,45]
+
+let newarr = [...arr]
+console.log(newarr)
+
+5. Functions (10 Questions)
+	41.	Write a function to check if a number is even or odd.
+    function checkNum(num){
+
+    if(typeof num==="string"){
+        console.log("enter a number")
+        return;
+    }
+
+    if(num%2==0){
+        console.log("number is even")
+    }
+    else{
+        console.log("number is odd")
+    }
+}
+checkNum(60)
+
+
+	42.	Create a function to calculate the area of a circle with a given radius.  
+function areaOfcyrcle (val){
+    if(typeof val==="string"){
+        console.log("enter a number")
+        return;
+    }
+
+    if(val<=0){
+        console.log("radius mustt be grater than zero")
+        return;
+    }
+
+    if(val === undefined){
+        console.log("please enter a number ")
+        return;
+    }
+
+    let radius = val*val;
+    let area= (Math.PI*radius).toFixed(2)
+    console.log(area)
+
+}areaOfcyrcle()
+
+
+	43.	Write a function that accepts an array and returns the sum of its elements.
+ function sumofArr(arr){
+
+    
+
+    let sum=0;
+    for (let element of arr) {
+
+        sum = sum + element;
+
+    }
+    console.log(sum)
+}
+
+let num = [3,2,3,4,5,3]
+
+sumofArr(num)
+
+
+
+
+	44.	Create a function that checks if a string starts with a specific character.
+   function cheackstr(str){
+    if(str.startsWith("s")){
+        console.log("true ")
+    }else{
+        console.log("false")
+    }
+}
+
+cheackstr("djkfjd")
+
+
+	45.	Write a function to find the maximum of two numbers.
+function max(num1,num2){
+    if(num1>num2){
+        console.log(num1)
+    }else{
+        console.log(num2)
+    }
+}
+
+max(2,5)
+
+	46.	Create a function that takes a number and returns its factorial.
+
+function fact (num){
+
+    let factorial= 1;
+    for(let i=1;i<=num;i++){
+      factorial=factorial*i;
+    }
+
+    console.log(factorial)
+}
+
+fact(14)
+
+	47.	Write a function that accepts a string and returns its reverse.
+
+	function reverse (str){
+    let reverse = str.split('').reverse().join("")
+console.log(reverse)
+}
+
+reverse("hell")
+
+
+	48.	Create a function to find the largest number in an array.
+	let arr = [34,53,3,45]
+function largestNum(arrd){
+    for(let i=0;i<arrd.length-1;i++){
+        if(arrd[i]>arrd[i+1]){
+           console.log("largest number in the array",arr[i])
+        }
+    }
+}
+largestNum(arr)
+
+
+
+	49.	Write a function that converts a string to kebab-case (e.g., "Hello World" → "hello-world").
+
+
+function toKebabCase(str) {
+    return str
+        .toLowerCase()               
+        .trim()                       
+          
+}
+console.log(toKebabCase("Hello World"));
+
+
+
+
+	50.	Create a function that logs "Hello, World!" every time it is called.
+
+
+function sayHello() {
+    console.log("Hello, World!");
+}
+sayHello()
+
+
+
+6. Conditionals (10 Questions)
+	51.	Write a program to check if a number is positive, negative, or zero.
+function checknum(num){
+    if(num<0){
+        console.log("numkber is positve ")
+    }else{
+        console.log("number is negiative")
+    }
+}
+
+checknum(0)
+
+
+
+	52.	Create a program to check if a year is a leap year.
+
+
+
+	53.	Write an if...else statement to determine if a person can vote based on their age.
+	function vote(age){
+    if(age>=18){
+        console.log("you can vote")
+    }else{
+        console.log("you can not vote")
+    }
+}
+
+vote(4)
+
+
+
+	54.	Use a switch statement to log the name of the day based on its number (1 = Monday).
+	let day = 6;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Invalid day");
+        break;
+}
+
+
+
+	55.	Write a program to check if a number is divisible by 3 and 5.
+
+	function checkdivisible (num){
+    if(num%3==0  ||  num%5==0){
+console.log("yess this number is divisible by " , num)
+    }else{
+        console.log("this number is not divisible by 3 or 5 ",num)
+    }
+}
+
+checkdivisible(44)
+
+
+	56.	Create a program to check the grade of a student based on marks.
+function calculateGrade(percentage) {
+    if (percentage >= 90) {
+        console.log("A+ Excellent", percentage);
+    } else if (percentage >= 80 && percentage <= 89) {
+        console.log("A Very Good", percentage);
+    } else if (percentage >= 70 && percentage <= 79) {
+        console.log("B Good", percentage);
+    } else if (percentage >= 60 && percentage <= 69) {
+        console.log("C Average", percentage);
+    } else if (percentage >= 40 && percentage <= 49) {
+        console.log("D Passing", percentage);
+    } else {
+        console.log("Fail", percentage);
+    }
+}
+
+calculateGrade(44); 
+
+
+
+
+	57.	Write an if condition to compare two strings and log if they are equal.
+	let str1 = "ujfeif"
+let str2 = "ujif"
+
+if (str1===str2){
+    console.log("yess")
+}else{
+    console.log("no")
+}
+
+
+	58.	Use a ternary operator to check if a number is even or odd.
+	let val = 4
+val%2==0?console.log("value is even "):console.log("value is odd")
+
+
+	59.	Write a program to find the largest of three numbers using if...else.
+	function numbers(num1,num2,num3){
+    if(num1>num2&&num1>num3){
+        console.log(num1)
+    }else if(num2>num1 && num2>num3){
+        console.log(num2)
+    }else{
+        console.log(num3)
+    }
+}
+
+
+numbers (2,2,2)
+
+	60.	Create a program to calculate the discount based on the price of an item.
+	function calculateDis(price){
+if(price<=100){
+    console.log("sorry no offer available on this",price)
+}
+else if(price>100 && price<=300){
+    console.log("10 percent discount availbale on this",price)
+}
+else if(price>300 && price<=500){
+    console.log("15 percent discount availbale on this",price)
+}
+else if(price>500 && price<=1000){
+    console.log("30 percent discount availbale on this",price)
+}
+else if(price>1000 && price<=3000){
+    console.log("50 percent discount availbale on this",price)
+}else{
+    console.log("60% offer available")
+}
+
+}
+
+calculateDis(452)
+
+
+
+
+7. Object Basics (10 Questions)
+	61.	Create an object with properties name, age, and city. Log the object.
+	const details ={
+    name:"viaksk",
+    age:"34",
+    city:"bbk",
+
+}
+
+console.log(details)
+
+
+
+
+	62.	Add a new property isStudent to the object above and set it to true.
+	const details ={
+    name:"viaksk",
+    age:"34",
+    city:"bbk",
+
+}
+
+console.log(details)
+
+details.isStudent=true;
+console.log(details)
+
+
+
+	63.	Access and log the value of the city property using bracket notation.
+
+	const details ={
+    name:"viaksk",
+    age:"34",
+    city:"bbk",
+
+}
+
+console.log(details)
+
+details.isStudent=true;
+console.log(details)
+
+console.log(details["city"])
+
+
+
+	64.	Delete the age property from an object and log the updated object.
+	const details ={
+    name:"viaksk",
+    age:"34",
+    city:"bbk",
+
+}
+
+console.log(delete details.age)
+console.log(details)
+
+
+
+
+
+	65.	Write a function that accepts an object and logs all its keys.
+	function accepting(obj){
+    for (const key in obj) {
+       console.log(key)
+    }
+}
+
+accepting({name:"vikas",age:"22",surname:"verma"})
+
+
+	66.	Create an array of objects representing books with title and author properties.
+	let books = [
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+]
+
+
+
+	67.	Access and log the author of the second book in the array.
+	
+let books = [
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"sambho se samdhi",
+        author:"shishya "
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+    {
+        name:"osho",
+        author:"osho"
+    },
+]
+
+console.log(books[1].author)
+
+
+
+
+	68.	Write a program to check if a specific key exists in an object.
+    const obj = { name: "John", age: 30 };
+
+console.log("name" in obj); // true
+console.log("gender" in obj); // false
+
+
+
+	69.	Create a function to count the number of keys in an object.
+    const obj = { name: "John", age: 30,add:"bbk" };
+console.log(Object.keys(obj).length)
+
+
+	70.	Use Object.assign() to merge two objects.
+
+const obj = { name: "John", age: 30,add:"bbk" };
+const obj2 ={rate:2,year:2022}
+console.log(Object.assign(obj,obj2))
+
+
+
+8. String Manipulation (10 Questions)
+	71.	Create a string and log its length.
+    
+let str= "vkdjfoejfeiojk"
+
+console.log(str.length)
+
+
+
+	72.	Extract the last 4 characters of a string.
+    let str = "iejfjfeijkfoiekfewfefjioe"
+console.log(str.slice(-4))
+
+
+
+	73.	Convert a string to lowercase and log it.
+    let str ="EFIOEJEOJEOIJF"
+console.log(str.toLocaleLowerCase())
+
+
+	74.	Split a sentence into words using .split() and log the result.
+    let str ="hellow my name is vikas "
+console.log(str.split(" "))
+
+
+	75.	Find the position of the first occurrence of "a" in a string.
+    const str = "JavaScript is amazing!";
+const position = str.indexOf("a");
+
+console.log(position); 
+
+
+
+
+	76.	Replace "JavaScript" with "JS" in the string "I love JavaScript".
+
+    const str = "JavaScript is amazing!";
+console.log(str.replace("is","are"))
+
+
+
+
+	77.	Repeat a string 3 times using .repeat().
+    const str = "JavaScript is amazing!";
+console.log (str.repeat(3))
+
+
+
+	78.	Create a function that checks if a string contains a specific word.
+    function checking (str,char){
+    return str.includes(char)
+}
+
+console.log(checking("vikas ","a"))
+
+
+
+	79.	Write a program to remove whitespace from both ends of a string.
+    let str = "   ejfeij    "
+
+console.log(str.trim())
+
+
+	80.	Create a function to count the number of vowels in a string.
+function countVowl(str){
+    let spliting = str.split("")
+    let val=0;
+    for (const element of spliting) {
+        if(element=="a" || element=="i"||element=="o"||element=="u"||element=="e"){
+val=val+1;
+        }
+    }
+    console.log(spliting)
+    console.log(val)
+}
+
+countVowl("eiouafhhfd")
+
+
+
+
+
+Mixed Practice (20 Questions)
+	81.	Write a function that accepts an array of numbers and returns only the even numbers.
+    function even (arr){
+for (const element of arr) {
+    if(element%2==0){
+        console.log(element)
+    }
+}
+}
+
+even([4,34,265,654,45,,43])
+
+
+
+
+	82.	Create a program to count the occurrences of a specific value in an array.
+
+
+
+
+
+
+    
+	83.	Write a function that accepts a string and returns whether it’s a palindrome.
+
+    function palindrome (str){
+let reverse = str.split("").reverse().join("")
+console.log(reverse)
+if(str==reverse){
+    console.log(str,"palindrom hai ",reverse)
+}else{
+    console.log("not a palindrome ")
+}
+}
+
+palindrome("elle")
+
+
+
+
+	84.	Create a program to log a pattern:
+
+*
+**
+***
+****
+for(let i=0;i<4;i++){
+    let val= ""
+    for(let j=0;j<=i;j++){
+        val = val+"*"
+       
+    }
+    console.log(val)
+}
+
+	85.	Write a function that returns the square of each number in an array.
+    function square (arr){
+arr.forEach(element => {
+console.log(element*element)
+});
+}
+
+square([3,4,5,6,7,2])
+
+
+
+
+	86.	Use a for loop to sum all odd numbers between 1 and 50.
+    let sum =0;
+for(let i=1; i<=50;i++){
+if(i%2 !==0){
+sum = sum+i;
+}
+}
+
+console.log(sum)
+
+
+
+	87.	Create an object representing a person and log their full name.
+    let obj ={
+    name:"vikas",
+    surname:"verma",
+    fullname:function(){
+    return `name ${this.name} surname ${this.surname} fullname ${this.name} ${this.surname}`
+    }
+}
+
+console.log(obj.fullname())
+
+
+
+
+
+
+	88.	Write a program to convert the string "10" to a number and add 5 to it.
+let str = "10"
+let num = +str +5
+console.log(num)
+
+	89.	Write a program to reverse an array without using .reverse().
+
+let arr =[4,3,4,3,2,45,666]
+let newarr = [];
+for (let i=arr.length-1; i>=0;i--){
+newarr.push(arr[i])
+}
+
+console.log(newarr)
+
+
+
+
+	90.	Create a program to check if an array is empty.
+    
+let arr = []
+
+if(arr.length==0){
+console.log("array is empty ")
+}
+else{
+    console.log(arr.length)
+}
+
+
+	91.	Write a program to fetch the current date and format it as DD/MM/YYYY.
+let date = new Date()
+  let str = JSON.stringify(date)
+  console.log(str.slice(1,11))
+
+
+	92.	Write a program to find the smallest number in an array.
+    let arr = [3,444,23,3433,0,33,1,3,32,3,4,3,]
+
+for(let i=0; i<=arr.length-1;i++){
+    if(arr[i]<arr[i+1]){
+arr[i+1]=arr[i]
+
+    }
+   
+}
+console.log(arr[arr.length - 1]);
+
+
+
+	93.	Create a function to return the Fibonacci sequence up to n terms.
+    
+
+
+
+
+function fibonacci(num) {
+    let first = 0;
+    let second = 1;
+    let series = [first, second];
+    
+    for (let i = 2; i <= num; i++) {
+        let next = first + second;
+        series.push(next);
+        first = second;
+        second = next;
+    }
+
+    console.log(series);
+}
+
+fibonacci(5);
+
+
+
+
+	94.	Use a try...catch block to handle division by zero.
+    try{
+    let val = 5
+    let devision =val/0;
+    console.log(devision)
+}catch(err){
+    console.log(err)
+}
+
+
+
+
+
+	95.	Write a program to find the index of the first vowel in a string.
+    let str = "hellow";
+
+str.split("").forEach((element, i) => {
+    if (element === "e" || element === "i" || element === "o" || element === "a" || element === "u") {
+        console.log(i);
+    }
+});
+
+
+
+
+
+	96.	Create a function that accepts an array and returns only unique values.
+    function unique(arr){
+let unique = new Set(arr)
+console.log(unique)
+}
+
+unique([34,3,2,,2,,43,2,2])
+
+
+
+	97.	Write a program to merge two sorted arrays into one sorted array.
+
+
+
+
+	98.	Create a function to count the number of words in a string.
+    function count (str){
+console.log(str.length-1)
+}
+
+count("difjifjidk")
+
+
+
+	99.	Write a program to toggle a button’s background color when clicked.
+    let btn = document.querySelector("button").addEventListener("click", () => {
+    let body = document.querySelector("body");
+
+   
+    if (body.style.backgroundColor === "red") {
+        body.style.backgroundColor = "white";
+    } else {
+        body.style.backgroundColor = "red";
+    }
+});
+
+
+
+
+	100.	Write a function to check if all elements in an array are greater than a specific value.
+    function allElementsGreaterThan(arr, value) {
+    return arr.every(element => element > value);
+}
+
+
+let arr = [10, 20, 30, 40];
+let value = 5;
+console.log(allElementsGreaterThan(arr, value));  
+
+let value2 = 25;
+console.log(allElementsGreaterThan(arr, value2)); 
+
+
+
+These questions cover a wide range of fundamental JavaScript concepts. Let me know if you’d like further clarification or solutions for any of these!
+
+
+
+
+======================================================================>
+
+
+
+
+
+
+
+Here are 100 new JavaScript questions, slightly harder than the previous ones, focusing on problem-solving, intermediate concepts, and advanced use of JavaScript features.
+
+1. Intermediate Console and Variables (10 Questions)
+	1.	Create a program that calculates and logs the result of (5 + 3) * 2 - 8 / 4.
+   
+   console.log((5+3)*2-8/4)  = 14
+
+
+	2.	Log the value of a variable before and after incrementing it using ++.
+    let a = 4;
+console.log(a++)
+// 4 ayega 
+
+let b = 4
+console.log(++b)
+// 5
+
+
+	3.	Write a program that swaps the values of two variables  without using a third variable.
+   
+   method1===>let a=5
+let b = 10
+
+let temp = a;
+a=b;
+b=temp;
+console.log("this is the value of a",a ,"this is the value of a",b)
+
+
+method 2=>
+
+let a = 3;
+let b=4
+
+a=a+b;  
+b=a-b;
+a=a-b;
+
+console.log("a",a,"b",b)
+
+
+
+	4.	Create a variable with a template literal that includes your name and age.
+
+      let name = "vikas "
+let age = "69"
+
+let litral = `my name ${name} and age ${age}`
+
+console.log(litral)
+
+
+
+	5.	Use console.table() to display the following object: { name: "John", age: 30, city: "New York" }.
+
+let obj= { name: "John", age: 30, city: "New York" }
+
+console.table(obj)
+
+
+	6.	Create a program that uses console.group() to group related logs.
+
+
+
+console.group('User Information');
+console.log('Name: Alice');
+console.log('Age: 25');
+console.log('Location: New York');
+
+// Start a nested group inside the first group
+console.group('Contact Details');
+console.log('Email: alice@example.com');
+console.log('Phone: 123-456-7890');
+console.groupEnd();  // End the nested group
+
+// End the first group
+console.groupEnd();
+
+
+
+	7.	Use console.time() and console.timeEnd() to measure the execution time of a simple loop.
+    
+    console.time('Timer 1');  
+
+
+let sum = 0;
+for (let i = 0; i < 50000000; i++) {
+  sum += i;
+}
+console.log(sum)
+console.timeEnd('Timer 1');  
+
+
+
+	8.	Log a variable’s value dynamically by including it in a string: "The value is: <value>".
+ 
+let val = "dfj"
+console.log(`${val}`)
+
+
+	9.	Use console.trace() to debug a function call stack.
+
+
+
+	10.	Create and log an object dynamically using computed property names.
+    let val = "vikas "
+let newval = "verma"
+let val1 = "vikadfds "
+let newval2= "rfrrfr"
+
+const obj = {
+    [val] : newval,
+    [`new${val1}new`]:newval2
+}
+console.log(obj)
+
+
+
+
+
+2. Advanced Loops (10 Questions)
+	11.	Write a nested loop to generate a multiplication table (1 to 10).
+    
+let table = 6
+
+for(let i=1;i<=10;i++){
+    for(let j=1;j<=10;j++){
+        console.log(i,"*",j,"=",i*j)
+    }
+}
+
+
+
+	12.	Use a for...in loop to iterate through the properties of an object.
+
+    let obj = {
+    name:"vikas",
+    gender:"male",
+    address:"bbk"
+}
+
+for (const key in obj) {
+    console.log(key,obj[key])
+}
+
+
+
+
+	13.	Write a program to calculate the sum of all even numbers between 1 and 100 using a for loop.
+    
+let sum =0;
+
+for(let i=0;i<=100; i++){
+if(i%2==0){
+    sum=sum+i
+}
+}
+
+console.log(sum)
+
+
+
+
+	14.	Use a for...of loop to iterate over a string and count the vowels.
+    let str = "aeiAu"
+let count = 0;
+for (const ele of str) {
+    if(ele.toLocaleLowerCase()==="a"||ele.toLocaleLowerCase()==="i"||ele.toLocaleLowerCase()==="o"||ele.toLocaleLowerCase()==="e"||ele.toLocaleLowerCase()==="u"){
+     count=count+1
+    }
+    
+}
+
+console.log(count)
+
+
+
+	15.	Create a loop that breaks out when a specific condition is met (e.g., number divisible by 7).
+    let arr = [234,34,323,23,21,45,66,57,]
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%7==0){
+       console.log(arr[i])
+       break;
+    }
+console.log(arr[i])
+}
+
+
+	16.	Write a loop that skips numbers divisible by 3 but logs all others up to 20.
+
+    for(let i=1;i<=20;i++){
+    if(i%3==0){
+      continue;
+    }
+    console.log(i)
+}
+
+
+
+
+	17.	Use a do...while loop to prompt the user until they enter a positive number.
+    let val;
+do {
+    val = prompt("Please enter a positive number");
+    val = Number(val); 
+} while (val <= 0 || isNaN(val)); 
+
+console.log("Entered value:", val);
+
+
+
+	18.	Write a nested loop to generate a pyramid pattern:
+
+   *
+  ***
+ *****
+*******
+
+
+
+	19.	Use a loop to reverse a string "JavaScript".
+    let str = "javascritp"
+for( let i=str.length-1; i>=0;i-- ){
+    console.log(str[i])
+}
+
+
+	20.	Write a program to calculate the product of all numbers in an array using a loop.
+let arr =[2,2,2,2,2,2]
+let product = 1;
+for (const element of arr) {
+    product=product*element
+}
+console.log(product)
+
+
+
+3. Arrays and Objects (10 Questions)
+	21.	Write a program to merge two arrays and remove duplicate values.
+    let arr1=[33,4,4,34,3,4,56,3,3]
+let arr2=[34,6,4,3,6]
+
+
+
+let merged = arr1.concat(arr2)
+console.log(merged)
+
+let unique=[...new Set(merged)]
+console.log(unique)
+
+
+
+
+	22.	Create a program to find the second largest number  in an array.
+    let arr =[3,4,4,5,4,3245]
+arr.sort((a,b) => a-b)
+
+console.log(arr[arr.length-2])
+
+let arr = [4,3,2,4,2,34,5,54,3]
+let max=arr[0]
+let secondMax=-Infinity
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        secondMax=max
+        max=arr[i]
+    }else if(arr[i]>secondMax && arr[i] !== max){
+        secondMax=arr[i]
+    }
+}
+
+console.log(secondMax)
+
+
+	23.	Write a function that removes all falsy values from an array.
+let mixedArray = [0, 1, "", "hello", false, true, undefined, null, NaN, 42];
+ 
+function removeAllFalsy (mixedArray){
+for(let i=0;i<mixedArray.length;i++){
+    if(!mixedArray[i]){
+      mixedArray.splice(i,1)
+      i--;
+     
+    }
+}
+}
+
+removeAllFalsy(mixedArray)
+console.log(mixedArray)
+
+
+	24.	Use .reduce() to find the total sum of numbers in an array.
+    let arr = [3,3,2,4,5,3]
+
+let sum = arr.reduce((acc,current)=>{
+    console.log(`accu ${acc} curre ${current}`)
+    acc= acc+current;
+    return acc;
+  
+},0)
+
+
+console.log(sum)
+
+
+
+
+	25.	Write a program that rotates an array to the left by n positions.
+    let arr = [1,2,3,4,5,6,7,8,9]
+
+let n=2;
+
+
+let rotate = arr.splice(n,arr.length).concat(arr[0],n)
+
+console.log(rotate)
+
+
+
+
+	26.	Use .find() to locate the first even number in an array.
+    let arr = [3, 5, 9, 3, 5, 6, 4];
+
+let result = arr.find((ele, i) => {
+    if (ele % 2 === 0) {
+        // Return an object containing the value and index
+        return { value: ele, index: i };
+    }
+});
+
+console.log(result); 
+
+
+	27.	Create a function that flattens a nested array (e.g., [1, [2, [3]]] → [1, 2, 3]).
+    let arr= [1, [2, [3]]]
+let newarr = arr.flat(Infinity)
+console.log(newarr)
+
+
+
+	28.	Write a program that counts how many times each element appears in an array.
+    let arr = [4,5,3,4,3,3,5,566,5,4]
+
+let obj = {}
+for(let i=0;i<arr.length;i++){
+    let number = arr[i];
+    if(obj[number]){
+        obj[number]=obj[number]+1;
+    }else{
+        obj[number]=1
+    }
+      
+}
+
+console.log(obj)
+
+
+
+	29.	Use .some() and .every() to check conditions on an array.
+    let arr = [3,2,4,5,5,4,3,2,4,5,5,3,3,-4,24]
+let some = arr.some(ele=>ele%2==0)
+console.log(some)
+
+
+
+
+let arr = [2, 4, 6, -8];
+
+let allPositive = arr.every((num) => num > 0);
+console.log(allPositive); // Output: true
+
+
+	30.	Sort an array of objects by a specific property.
+    
+
+
+
+let people = [
+    { name: "Alice", age: 25, city: "New York", occupation: "Engineer" },
+    { name: "Bob", age: 30, city: "San Francisco", occupation: "Designer" },
+    { name: "Charlie", age: 35, city: "New York", occupation: "Teacher" },
+    { name: "Diana", age: 28, city: "Chicago", occupation: "Engineer" },
+    { name: "Eve", age: 22, city: "San Francisco", occupation: "Developer" }
+];
+
+// filter by city name 
+
+let filteredData =  people.filter((obj)=>{
+    if(obj.city.toLocaleLowerCase().includes("san francisco")){
+        return obj ;
+    }
+})
+
+console.log(filteredData)
+
+// filter by occupation
+
+let filterbyoccuption = people.filter((obj,i)=>{
+    if(obj.occupation.toLocaleLowerCase().includes("engineer")){
+         return obj
+    }
+})
+console.log(filterbyoccuption)
+
+
+
+
+
+4. Functions and Closures (10 Questions)
+	31.	Write a function that returns another function to calculate the power of a number.
+     let power = function getpow(base){
+return function (exponet){
+return Math.pow(base,exponet)
+}
+}
+
+let newvar = power(2)
+
+console.log(newvar(2))
+
+
+
+let newpow = function newfn(callback,base,exponent){
+    return callback(base,exponent)
+}
+
+
+let calculate = function callback(base,exponent){
+    return Math.pow(base,exponent)
+}
+
+let result = calculate(2,2)
+
+console.log(result)
+
+
+
+	32.	Create a recursive function to calculate the Fibonacci sequence up to n terms.
+    function fibbnaci (num){
+    let first = 0;
+    let second = 1;
+
+    for(let i=0;i<=num;i++){
+        console.log(first)
+        let fib=first+second;
+        first=second
+        second=fib
+      
+    }
+}
+
+fibbnaci(5)
+
+
+
+
+	33.	Write a function that uses closures to create a counter.
+
+
+     function counter (){
+    let count=0;
+    return{
+        increment:()=>{
+            count++
+            return count;
+        },
+        decrement:()=>{
+            count--
+            return count;
+        },
+        reset:()=>{
+            count=0;
+            return count;
+        },
+    }
+ }
+
+
+ let result = counter()
+ 
+
+ console.log(result.increment())
+ console.log(result.increment())
+ console.log(result.increment())
+
+//  console.log(result.decrement())
+//  console.log(result.decrement())
+//  console.log(result.decrement())
+
+console.log(result.reset())
+
+
+	34.	Create a function that memoizes the result of a computation.
+	35.	Write a function to debounce a button click event.
+	36.	Implement a function that throttles an API call.
+	37.	Create a higher-order function that applies a callback to each element of an array.
+	38.	Write a function that calculates the GCD (Greatest Common Divisor) of two numbers.
+	39.	Create a function that accepts an array of functions and executes them sequentially.
+	40.	Write a function to curry a simple mathematical operation.
+
+5. Strings and Regular Expressions (10 Questions)
+	41.	Write a program to reverse the words in a sentence but not the sentence itself.
+	42.	Use a regex to validate if a string is a valid email address.
+	43.	Create a function to check if a string contains only digits.
+	44.	Write a function to extract all numbers from a string and return them as an array.
+	45.	Use .match() to find all occurrences of a word in a string.
+	46.	Create a program to capitalize the first letter of each word in a string.
+	47.	Write a function that removes duplicate characters from a string.
+	48.	Use a regex to replace multiple spaces with a single space.
+	49.	Write a function to check if a string is an anagram of another string.
+	50.	Create a function to count the frequency of each word in a string.
+
+6. Intermediate DOM Manipulation (10 Questions)
+	51.	Write a script to dynamically create 10 buttons on a webpage.
+    let body = document.querySelector('body')
+
+
+for(let i=0;i<11;i++){
+    let constiner = document.createElement('div')
+    constiner.classList.add="buttons"
+    let btn = document.createElement('button')
+    btn.textContent = "click me"
+    constiner.append(btn)
+    body.append(constiner)
+}
+
+
+
+	52.	Add an event listener to a button that logs its id when clicked.
+    
+const btn= document.getElementById("click")
+btn.addEventListener("click",(e)=>{
+console.log(e.target.id)
+})
+
+
+
+	53.	Write a program to change the background color of a <div> on hover.
+ <div class="man"  style="height: 300px; width: 300px; border: 1px solid black;" >
+
+ </div>
+
+     let box = document.querySelector(".man");
+
+box.addEventListener("mousemove", (e) => {
+    // console.log(e.x)
+    box.style.backgroundColor = `rgb(${e.x},${e.y},${e.x})`;
+});
+
+
+
+	54.	Dynamically add a CSS class to an element when a button is clicked.
+<h1>helow</h1>
+<button>add class</button>
+
+    let h1 = document.querySelector("h1")
+let btn =document.querySelector("button")
+
+btn.addEventListener("click",()=>{
+    h1.classList.add("hcalss")
+   
+})
+
+
+	55.	Create a function to toggle the visibility of an element.
+<h1 class="display" >helow</h1>
+<button>add class</button>
+
+    let h1 = document.querySelector("h1")
+let btn =document.querySelector("button")
+
+btn.addEventListener("click",()=>{
+   
+   if(h1.style.display==="none"){
+    h1.style.display="block"
+   }else{
+    h1.style.display="none"
+   }
+   
+})
+	56.	Write a program to count the number of <p> tags on a page.
+        <h1></h1>
+<p>Lorem, ipsum dolor.</p>
+<p>Lorem, ipsum dolor.</p>
+<p>Lorem, ipsum dolor.</p>
+
+<button>add class</button>
+let h1 = document.querySelector("h1")
+let btn =document.querySelector("button")
+let p = document.querySelectorAll("p")
+btn.addEventListener("click",()=>{
+   h1.innerHTML=`${p.length}`
+//    console.log(p.length)
+})
+
+	57.	Implement a function to disable all input fields on a form.
+     <form>
+        <label for="input1">Input 1:</label>
+        <input  class="input" type="text" id="input1" name="input1"><br><br>
+
+        <label for="input2">Input 2:</label>
+        <input class="input" type="text" id="input2" name="input2"><br><br>
+
+        <label for="input3">Input 3:</label>
+        <input class="input" type="text" id="input3" name="input3"><br><br>
+
+        <label for="input4">Input 4:</label>
+        <input class="input" type="text" id="input4" name="input4"><br><br>
+
+        <label for="input5">Input 5:</label>
+        <input class="input" type="text" id="input5" name="input5"><br><br>
+
+        <input type="submit" id="btn" value="Submit">
+    </form>
+
+let btn = document.getElementById("btn");
+let inputs = document.querySelectorAll(".input");
+console.log(inputs)
+btn.addEventListener("click", (e) => {
+    e.preventDefault(); 
+
+
+   
+    inputs.forEach(input => {
+        input.setAttribute("disabled", "true"); 
+    });
+});
+7
+
+
+
+	58.	Write a program to clone an element and append it to the DOM.
+    <div id="original-element" style="padding: 10px; border: 1px solid black;">
+        I am the original element!
+    </div>
+    <button id="clone-button">Clone Element</button>
+    <div id="container"></div>
+
+const originalElement = document.getElementById('original-element');
+const cloneButton = document.getElementById('clone-button');
+const container = document.getElementById('container');
+
+
+cloneButton.addEventListener('click', () => {
+    
+    const clonedElement = originalElement.cloneNode(true); 
+
+
+    container.appendChild(clonedElement);
+});
+
+
+
+
+	59.	Add a click event to a list of items and display the clicked item’s text.
+       <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <p id="display-text">Clicked item text will appear here.</p>
+
+
+const itemlist = document.querySelector("#item-list")
+const display = document.querySelector("#display-text")
+console.log(itemlist)
+
+itemlist.addEventListener("click",(e)=>{
+
+    if (e.target.tagName === "LI") {
+        let item = e.target.textContent; 
+        display.innerHTML = item; 
+       
+    }
+
+})
+
+
+	60.	Create a program to validate a form using JavaScript.
+
+7. Intermediate Algorithms (10 Questions)
+	61.	Write a function to merge two sorted arrays into one sorted array.
+	62.	Implement a binary search algorithm.
+	63.	Write a function to check if two strings are one edit away.
+	64.	Create a function that finds the longest common prefix in an array of strings.
+	65.	Write a program to check if a string can be rearranged into a palindrome.
+	66.	Create a function to find the intersection of two arrays.
+	67.	Implement the Sieve of Eratosthenes to find prime numbers up to n.
+	68.	Write a program to generate all subsets of a given array.
+	69.	Create a function to calculate the power of a number iteratively.
+	70.	Implement a function to sort an array using the quicksort algorithm.
+
+8. Advanced Error Handling (10 Questions)
+	71.	Write a program to handle a division by zero error.
+	72.	Use try...catch to log an error message for invalid JSON parsing.
+	73.	Write a function to validate user input and throw a custom error if invalid.
+	74.	Create a program to handle a failed promise using .catch().
+	75.	Use finally to log a cleanup message after a promise resolves or rejects.
+	76.	Implement a function to retry a failed API call up to 3 times.
+	77.	Write a function that uses try...catch inside an async function.
+	78.	Create a program to handle and log syntax errors dynamically.
+	79.	Write a function to ensure a variable is defined before using it.
+	80.	Use error handling to check if a file exists before reading it.
+
+9. Advanced Array and Object Manipulation (10 Questions)
+	81.	Write a function that groups an array of objects by a specific property.
+	82.	Use .map() to transform an array of objects into a new format.
+	83.	Write a program to deep clone an object without using external libraries.
+	84.	Create a function that merges multiple arrays into a single unique array.
+	85.	Write a function to count the occurrences of properties in an array of objects.
+	86.	Implement a function to sort an array of objects by multiple properties.
+	87.	Write a function to create a nested object from a flat array of key-value pairs.
+	88.	Use .reduce() to transform an array into an object with grouped values.
+	89.	Create a function to find the difference between two arrays of objects.
+	90.	Write a function to filter and transform an array of objects in a single step.
+
+10. Real-World Use Cases (10 Questions)
+	91.	Create a simple program that fetches and displays user data from a mock API.
+	92.	Write a program to simulate a shopping cart with add, remove, and total cost features.
+	93.	Implement a simple pagination system for an array of data.
+	94.	Write a program to dynamically update a chart using JavaScript.
+	95.	Create a program to search for and highlight specific text on a webpage.
+	96.	Write a program to simulate a basic stopwatch with start, stop, and reset functionality.
+	97.	Implement a function to validate password strength based on rules.
+	98.	Create a simple image slider with next/previous buttons.
+	99.	Write a program to sort and display data fetched from an API.
+	100.	Create a program that automatically saves form data to localStorage.
+
+Let me know if you’d like to explore solutions or get hints for any of these!
